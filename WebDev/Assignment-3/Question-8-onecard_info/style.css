@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: 'Manrope', sans-serif;
+}
+
+.navbar {
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2.5rem;
+    color: #ffffff;
+}
+
+.logoImg {
+    width: 4rem;
+    filter: invert(1);
+}
+
+.menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    width: 30%;
+}
+
+button {
+    background-color: #1893f7;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hero {
+    display: flex;
+    padding: 2rem 2.5rem 0;
+}
+
+.hero-left {
+    width: 60%;
+    padding: 3rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.hero-heading>p {
+    font-size: 2rem;
+}
+
+.hero-heading>h1 {
+    font-family: 'Manrope';
+    color: #1893f7;
+    font-size: 3.6rem;
+}
+
+.hero-left>p:first-of-type {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1893f7;
+
+}
+
+.desc {
+    font-size: 1.2rem;
+    color: #000000;
+    font-weight: 500;
+    width: 75%;
+}
+
+.banking-partners {
+    width: 100%;
+}
+
+.partnerImages {
+    width: 50%;
+}
+
+.hero-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video-div {
+    width: 100%;
+}
+
+.card-video {
+    width: 100%;
+}
+
+
+@media all and (max-width: 1200px) {
+    html {
+        font-size: 80%;
+    }
+
+    .menu, button {
+        display: none;
+    }
+
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .hamburger {
+        display: inline;
+    }
+
+    .fa-bars {
+        font-size: 2rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 0;
+        align-items: center;
+    }
+
+    .hero-left {
+        width: 80%;
+        padding-bottom: 2rem;
+    }
+
+    .partnerImages {
+        width: 80%;
+    }
+
+    .desc {
+        width: 90%;
+        font-weight: 300;
+    }
+
+    .hero-right {
+        width: 80%;
+        align-items: center;
+    }
+
+    .card-video {
+        width: 100%;
+    }
+}
+
+/* Third Section*/
+
+.third {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.third h1 {
+    color: #383CC1;
+    font-size: 4rem;
+}
+
+.third-p p {
+    color: #ffffff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+@media all and (max-width: 900px) {
+    .third {
+        padding: 2rem 0;
+        background-color: #ffffff;
+    }
+
+    .third h1 {
+        font-size: 2.8rem;
+        width: 80%;
+        text-align: center;
+    }
+
+    .third-p p{
+        font-size: 2rem;
+        color: #000000;
+        font-weight: 500;
+    }
+}

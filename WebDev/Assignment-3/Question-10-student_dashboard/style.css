@@ -1,0 +1,64 @@
+body {
+    background-color: black;
+    overflow-x: hidden;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container {
+  margin: 1rem;
+}
+
+.heading {
+  font-size: 2rem;
+  color: white;
+}
+
+.table-container {
+    overflow-x: auto;
+    border: 2px solid white;
+    font-family: 'arial';
+}
+
+table {
+    background-color: black;
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+th,
+td {
+    color: white;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+
+tr {
+    border: 1px solid white;
+}
+
+th:first-child,
+td:first-child {
+  border-left: none;
+}
+
+@media screen and (max-width: 400px) {
+  table {
+    width: max-content;
+  }
+
+  .table-container {
+    overflow-x: scroll;
+  }
+  
+  td {
+    width: 120px;
+  }
+}
+
+
+
+

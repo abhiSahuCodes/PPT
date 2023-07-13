@@ -1,0 +1,67 @@
+html {
+    font-size: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #3C329A;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 14rem;
+}
+
+.clock {
+    max-width: 40%;
+    color: white;
+    display: flex;
+    border-radius: 0.5rem;
+    background-color: #6758F6;
+    padding: 4rem 4rem;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.hour-section, .minute-section, .second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hour, .minute, .second {
+    font-size: 4rem;
+}
+
+.hour-text, .minute-text, .second-text{
+    font-size: 1.2rem;
+}
+
+
+@media all and (max-width: 768px) {
+    html {
+        font-size: 60%;
+    }
+
+    h1 {
+        font-size: 10rem;
+    }
+
+    .clock {
+        width: 100%;
+    }
+}

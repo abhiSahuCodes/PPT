@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store - Single Product</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <section class="container">
+        <div class="navbar">
+            <div class="logo">
+                <p>Fake Store</p>
+            </div>
+            <div class="menu">
+                <ul class="menuList">
+                    <li><a href="index.html" class="backToHome">Home</a></li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li><button class="cartButton">Cart</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="single-product-section">
+            <div class="single-product-container">
+                <div class="single-product-image">
+                    <img class="productImg" src="" alt="">
+                </div>
+                <div class="single-product-details">
+                    <h1 class="single-product-title"></h1>
+                    <p class="single-product-price"></p>
+                    <button class="buyNow-button">Buy Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-modal">
+            <div class="cart-modal-content">
+                <div class="cart-header">
+                    <h2>Cart</h2>
+                    <button class="closeCartButton">&times;</button>
+                </div>
+                <div class="cart-items"></div>
+            </div>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+    <script>
+        const selectedProduct = JSON.parse(localStorage.getItem('selectedProduct'));
+        const productImage = document.querySelector('.productImg');
+        const productTitle = document.querySelector('.single-product-title');
+        const productPrice = document.querySelector('.single-product-price');
+        const buyNowButton = document.querySelector('.buyNow-button');
+
+        productImage.src = selectedProduct.image;
+        productTitle.textContent = selectedProduct.title;
+        productPrice.textContent = `Price: $${selectedProduct.price}`;
+    </script>
+</body>
+
+</html>

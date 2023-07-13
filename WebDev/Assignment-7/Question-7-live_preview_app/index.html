@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Preview App</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <section class="container">
+        <h1>Live Preview</h1>
+        <div class="hero">
+            <div class="left">
+                <div class="form-section">
+                    <h2>Publish Your Story</h2>
+                    <form class="form">
+                        <input type="text" name="title" id="title" placeholder="Title of the story">
+                        <input type="text" name="img" id="img" placeholder="Enter Image URL">
+                        <input type="text" name="author" id="author" placeholder="Enter Author Name">
+                        <input type="text" name="category" id="category" placeholder="Category Eg. Educational">
+                        <textarea name="story" id="story" cols="30" rows="10" placeholder="Enter Your Story"></textarea>
+                        <button id="submit">Submit My Story</button>
+                    </form>
+                </div>
+            </div>
+            <div class="right">
+                <div class="image-section">
+                    <img src="https://dummyimage.com/640x4:3/" alt="" class="storyImg">
+                </div>
+                <div class="content-section">
+                    <h3 class="storyTitle">Write the title</h3>
+                    <p class="storyContent">Write the story</p>
+                    <div class="authorName">Written by</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+</html>
